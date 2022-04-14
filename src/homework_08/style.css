@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #3B3F45;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2 {
+    margin: 0;
+    color: #FF8984;
+}
+
+input {
+    margin: 0px;
+}
+
+ul {
+    padding: 0;
+}
+
+.header {
+    background-color: #4A4F56;
+    text-align: center;
+    padding: 15px;
+}
+
+.title {
+    color: #FF8984;
+}
+
+.title.header1 {
+    font-size: 24px;
+}
+
+.title.header2 {
+    font-size: 16px;
+}
+
+.main {
+    padding-top: 50px;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 534px;
+}
+
+.form-list {
+    list-style: none;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    background-color: #88839E;
+    max-width: 510px;
+    padding: 12px;
+    color: #fff;
+    transition: background-color .1s linear;
+}
+
+.label:nth-last-of-type(even) {
+    background-color: #7A7593;
+}
+
+.label:hover {
+    background-color: #625E77;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.label:active {
+    background-color: #FF8984;
+}
+
+.checkbox {
+    width: 19px;
+    height: 19px;
+}
+
+.label_text {
+    margin-left: 15px;
+}
+
+.label_subtext {
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.label_subtext::before {
+    content: "(";
+}
+
+.label_subtext::after {
+    content: ")";
+}
+
+#check_label:checked + .label_text {
+    text-decoration:line-through;
+    color: #9B96AC;
+}
+
+#check_label_2:checked + .label_text {
+    text-decoration:line-through;
+    color: #9B96AC;
+}
+
+#check_label_3:checked + .label_text {
+    text-decoration:line-through;
+    color: #9B96AC;
+}
+
+#check_label_4:checked + .label_text {
+    text-decoration:line-through;
+    color: #9B96AC;
+}
+
+#check_label_5:checked + .label_text {
+    text-decoration:line-through;
+    color: #9B96AC;
+}
+
+#check_label_6:checked + .label_text {
+    text-decoration:line-through;
+    color: #9B96AC;
+}
+
+.button {
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #4A4F56;
+    font-size: 18px;
+    color: #FF8984;
+    border: none;
+    transition: background 0.1s linear;
+}
+
+.button:hover {
+    background-color: #FF8984;
+    color: #fff;
+}
+
+.button:active {
+    background-color:#cc6c69;
+}
