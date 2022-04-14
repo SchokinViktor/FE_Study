@@ -1,0 +1,18 @@
+body {
+    font-size: 18px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 27px;
+    font-family: "Microsoft Sans Serif", sans-serif;
+}
+
+h2 {
+    font-size: 25.5px;
+    font-family: "Microsoft Sans Serif", sans-serif;
+}
+
+.img {
+    width: 500px;
+}
