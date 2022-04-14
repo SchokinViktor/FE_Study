@@ -1,0 +1,95 @@
+/* General */
+body {
+    font-size: 20px;
+    font-family: Montserat, sans-serif;
+    line-height: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+/* Card */
+.card {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 7px 23px;
+}
+
+.card-top {
+    height: 80%;
+    background-color: #fff;
+    display: flex;
+}
+
+.avatar-img {
+    height: 100%;
+}
+
+.info {
+    padding: 45px 55px;
+}
+
+.info-title {
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    margin-bottom: 5px;
+    color: #006ac7;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.paragraph {
+    margin-top: 20px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20%;
+    background-color: #006ac7;
+}
+
+.bottom-img {
+    max-width: 50px;
+    height: 50px;
+}
+
+/* about */
+.about {
+    margin-top: 100px;
+}
+
+.about-text {
+    margin-top: 20px;
+}
+
+/* Skills */
+.skills {
+    margin-top: 100px;
+}
