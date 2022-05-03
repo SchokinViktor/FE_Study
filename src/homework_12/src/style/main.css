@@ -6,6 +6,7 @@
 
 body {
     font-family: 'PT-Sans', sans-serif;
+    margin: 0;
 }
 
 h1,
@@ -65,6 +66,7 @@ ol {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 
 .header-nav-link {
@@ -74,13 +76,35 @@ ol {
     font-size: 20px;
 }
 
+.header-nav-item:after {
+    content: "/";
+    font-size: 18px;
+    margin-left: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.header-nav-item:last-child:after {
+    content: "";
+    margin: 0;
+}
+
+.header-nav-item:first-child:after {
+    content: "";
+    margin: 0;
+}
+
 .header-lang {
     font-weight: 900;
 }
 
 /*Main*/
 .main {
-    
+    padding-top: 120px;
+}
+
+.main-page {
+    padding: 0;
 }
 
 .main .container {
@@ -91,7 +115,7 @@ ol {
 .sidebar {
     position: sticky;
     top: 0;
-    padding-top: 98px;
+    padding-top: 120px;
 }
 
 .sidebar-list-item {
@@ -110,7 +134,7 @@ ol {
 .articles {
     max-width: 1160px;
     width: 100%;
-    padding-top: 98px;
+    padding-top: 120px;
 }
 
 .section {
