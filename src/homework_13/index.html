@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/my_own_normalize.css">
+    <link rel="stylesheet" href="src/style/font.css">
+    <link rel="stylesheet" href="src/style/main.css">
+    <title>Homework 13</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="form-holder">
+                <div class="title-holder">
+                    <h2 class="form-title">Create an Account</h2>
+                </div>
+
+                <form action="#" class="form">
+
+                    <div class="form-section">
+                        <div class="input-holder"> 
+                            <label for="first-name" class="input-label">First Name</label>
+                            <input type="text" class="input">
+                        </div>
+
+                        <div class="input-holder">
+                            <label for="last-name" class="input-label">Last Name</label>
+                            <input type="text" class="input">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="input-holder input-holder-full-size">
+                            <label for="last-name" class="input-label">E-mail</label>
+                            <input type="email" class="input">
+                            <div class="form-section-text-holder">
+                                <p>We'll never share your email with anyone else.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <ul class="radio-list">
+                            <li class="radio-list-item">
+                                <label class="label-holder" for="choose_male">
+                                    <input type="radio" id="choose_male" name="choose_gender" class="input-radio">
+                                    <div class="radio"></div>
+                                    <span>Male</span>
+                                </label>
+                            </li>
+
+                            <li class="radio-list-item">
+                                <label class="label-holder" for="choose_female">
+                                    <input type="radio" id="choose_female" name="choose_gender" class="input-radio">
+                                    <div class="radio"></div>
+                                    <span>Female</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="input-holder"> 
+                            <label for="country-name" class="input-label">Contry</label>
+                            <div class="select-holder">
+                                <select class="input input-select" name="county" id="county-select">
+                                    <option value="1">Ukraine</option>
+                                    <option value="2">China</option>
+                                    <option value="3">Japan</option>
+                                    <option value="4">Brazil</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-holder">
+                            <label for="city-name" class="input-label">City</label>
+                            <input type="text" class="input">
+                        </div>
+                    </div>
+
+                    <div class="form-section noflex-form-section">
+                        <div class="button-holder">
+                            <button class="btn btn-large" type="submit">Sign Up</button>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-text-hodler">
+                            <p>By clicking the 'Sign Up' button, you confirm that you accept our <a class="form-link" href="#">Terms of use</a> and <a href="#" class="form-link">Privacy</a>.
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-footer">
+                            <div class="form-footer-link-holder">
+                                <span>Have an account?<a class="form-link form-link-bold" href="#">Log in</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
