@@ -16,22 +16,20 @@ body {
 
 }
 
-.form-holder {
-    width: 100%;
-    background-color: #fff;
-    padding: 20px;
-}
-
 .title-holder {
-font-weight: 600;
-font-size: 24px;
-line-height: 32px;
-letter-spacing: -0.4px;
-color: #1C1C1C;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #1C1C1C;
+    margin-bottom: 20px;
 }
 
 .form {
-    padding-top: 20px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 100px;
 }
 
 .input-holder {
@@ -72,7 +70,7 @@ color: #1C1C1C;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .input-holder-full-size{
@@ -178,9 +176,10 @@ color: #1C1C1C;
     background-color: #fff;
     font-size: 15px;
     font-weight: 700;
-    padding: 10px 0;
+    padding: 6px 43px;
     color: #161616;
     transition: all .1s linear;
+    cursor: pointer;
 }
 
 .btn-large {
@@ -225,4 +224,68 @@ color: #1C1C1C;
 
 .form-link-bold {
     font-weight: 700;
+}
+
+.form-img-holder {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.input-file {
+    width: 100%;
+    height: 100%;
+}
+
+.input-file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.input-file::before {
+    content: none;
+    display: inline-block;
+    -webkit-user-select: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.input-file-holder {
+    position: relative;
+    max-width: 138px;
+    width: 100%;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.input-file-icon {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-delete {
+    padding: 14px;
+}
+
+.btn-delete-holder {
+    position: relative;
+    max-width: 30px;
+    width: 100%;
+    height: 30px;
+}
+
+.btn-delete-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translate(-50%, -50%);
+}
+
+.form-section-flex-start {
+    justify-content: flex-start;
+}
+
+.btn-holder-footer {
+    margin-bottom: 80px;
 }

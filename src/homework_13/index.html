@@ -12,53 +12,127 @@
 <body>
     <main class="main">
         <div class="container">
-            <div class="form-holder">
+            <form action="#" class="form">
+
                 <div class="title-holder">
                     <h2 class="form-title">Create an Account</h2>
                 </div>
 
-                <form action="#" class="form">
+
+                <div class="form-section">
+                    <div class="input-holder"> 
+                        <label for="first-name" class="input-label">First Name</label>
+                        <input type="text" class="input">
+                    </div>
+
+                    <div class="input-holder">
+                        <label for="last-name" class="input-label">Last Name</label>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="input-holder input-holder-full-size">
+                        <label for="last-name" class="input-label">E-mail</label>
+                        <input type="email" class="input">
+                        <div class="form-section-text-holder">
+                            <p>We'll never share your email with anyone else.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <ul class="radio-list">
+                        <li class="radio-list-item">
+                            <label class="label-holder" for="choose_male">
+                                <input type="radio" id="choose_male" name="choose_gender" class="input-radio">
+                                <div class="radio"></div>
+                                <span>Male</span>
+                            </label>
+                        </li>
+
+                        <li class="radio-list-item">
+                            <label class="label-holder" for="choose_female">
+                                <input type="radio" id="choose_female" name="choose_gender" class="input-radio">
+                                <div class="radio"></div>
+                                <span>Female</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <div class="input-holder"> 
+                        <label for="country-name" class="input-label">Contry</label>
+                        <div class="select-holder">
+                            <select class="input input-select" name="county" id="county-select">
+                                <option value="1">Ukraine</option>
+                                <option value="2">China</option>
+                                <option value="3">Japan</option>
+                                <option value="4">Brazil</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-holder">
+                        <label for="city-name" class="input-label">City</label>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+
+                <div class="form-section noflex-form-section">
+                    <div class="button-holder">
+                        <button class="btn btn-large" type="submit">Sign Up</button>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-text-hodler">
+                        <p>By clicking the 'Sign Up' button, you confirm that you accept our <a class="form-link" href="#">Terms of use</a> and <a href="#" class="form-link">Privacy</a>.
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-footer">
+                        <div class="form-footer-link-holder">
+                            <span>Have an account?<a class="form-link form-link-bold" href="#">Log in</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+           
+
+           
+               <form action="#" class="form">
+                    <div class="title-holder">
+                        <h2 class="form-title">Profile</h2>
+                    </div>
+
+                    <div class="form-section form-section-flex-start">
+                        <div class="form-img-holder">
+                            <img src="src/img/📷 Image.jpg" alt="avatar" >
+                        </div>
+                        <div class="input-holder input-file-holder">
+                            <input type="file" class="input input-file">
+                            <img src="src/img/Photo_Camera.svg" alt="photo-input" class="input-file-icon">
+                        </div>
+                        <div class="button-holder btn-delete-holder">
+                            <button class="btn btn-delete"></button>
+                            <img src="src/img/Trash.svg" alt="delete" class="btn-delete-icon">
+                        </div>
+                    </div>
 
                     <div class="form-section">
                         <div class="input-holder"> 
                             <label for="first-name" class="input-label">First Name</label>
                             <input type="text" class="input">
                         </div>
-
+    
                         <div class="input-holder">
-                            <label for="last-name" class="input-label">Last Name</label>
-                            <input type="text" class="input">
-                        </div>
-                    </div>
-
-                    <div class="form-section">
-                        <div class="input-holder input-holder-full-size">
-                            <label for="last-name" class="input-label">E-mail</label>
+                            <label for="last-name" class="input-label">Email</label>
                             <input type="email" class="input">
-                            <div class="form-section-text-holder">
-                                <p>We'll never share your email with anyone else.</p>
-                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-section">
-                        <ul class="radio-list">
-                            <li class="radio-list-item">
-                                <label class="label-holder" for="choose_male">
-                                    <input type="radio" id="choose_male" name="choose_gender" class="input-radio">
-                                    <div class="radio"></div>
-                                    <span>Male</span>
-                                </label>
-                            </li>
-
-                            <li class="radio-list-item">
-                                <label class="label-holder" for="choose_female">
-                                    <input type="radio" id="choose_female" name="choose_gender" class="input-radio">
-                                    <div class="radio"></div>
-                                    <span>Female</span>
-                                </label>
-                            </li>
-                        </ul>
                     </div>
 
                     <div class="form-section">
@@ -73,35 +147,31 @@
                                 </select>
                             </div>
                         </div>
-
+    
                         <div class="input-holder">
                             <label for="city-name" class="input-label">City</label>
                             <input type="text" class="input">
                         </div>
                     </div>
 
-                    <div class="form-section noflex-form-section">
-                        <div class="button-holder">
-                            <button class="btn btn-large" type="submit">Sign Up</button>
+                    <div class="form-section">
+                        <div class="input-holder"> 
+                            <label for="first-name" class="input-label">Zip-code</label>
+                            <input type="password" class="input">
+                        </div>
+    
+                        <div class="input-holder">
+                            <label for="last-name" class="input-label">Phone Number</label>
+                            <input type="tel" class="input">
                         </div>
                     </div>
 
                     <div class="form-section">
-                        <div class="form-text-hodler">
-                            <p>By clicking the 'Sign Up' button, you confirm that you accept our <a class="form-link" href="#">Terms of use</a> and <a href="#" class="form-link">Privacy</a>.
+                        <div class="button-holder btn-holder-footer">
+                             <button class="btn">Update</button>
                         </div>
                     </div>
-
-                    <div class="form-section">
-                        <div class="form-footer">
-                            <div class="form-footer-link-holder">
-                                <span>Have an account?<a class="form-link form-link-bold" href="#">Log in</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </form>
-            </div>
+               </form>
         </div>
     </main>
 </body>
