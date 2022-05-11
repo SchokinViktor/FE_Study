@@ -1,0 +1,95 @@
+.footer {
+    margin-bottom: 83px;
+
+    .container {
+        border-top: 1px solid #979797;
+        padding-top: 100px;
+
+        @include media ('>=tablet') {
+            display: flex;
+        
+        }
+    }
+
+    .footer-logo-holder {
+        margin-bottom: 50px;
+        width: 55%;
+        margin: 0 auto;
+        @include media ('>=tablet') {
+            margin-right: 40px;
+            width: 30%;
+        }
+
+        @include media ('>=1000px') {
+            margin-right: 126px;
+        }
+    }
+
+    .footer-col {
+        width: 100%;
+        padding-top: 75px;
+        display: flex;
+        flex-direction: column;
+
+        @include media ('>=tablet') {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+}
+
+.footer-list {
+    margin-bottom: 50px;
+    text-align: center;
+ 
+
+    @include media ('>=tablet') {
+        margin-bottom: 0;
+        text-align: left;
+
+        padding: 0 40px;
+        &:first-child {
+            padding: 0 40px 0 0;
+        }
+    }
+}
+
+.footer-list-item {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-list-link {
+        line-height: 35px;
+        color: $text-color;
+    }
+}
+
+.footer-form {
+    max-width: 325px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include media (">=tablet") {
+        margin: 0;
+    }
+
+    .input-holder {
+        margin-bottom: 21px;
+        width: 100%;
+    }
+}
+
+.footer-btn-holder {
+    text-align: center;
+
+    @include media ('>=tablet') {
+        text-align: left;
+    }
+
+    .footer-btn {
+        @extend .btn-small;
+    }
+}
