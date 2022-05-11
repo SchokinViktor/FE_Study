@@ -1,0 +1,100 @@
+.hero-section {
+    padding-top: 30px;
+    margin-bottom: 111px;
+
+    .hero-col-holder {
+        @extend .section-col-holder;
+    }
+}
+
+.hero-col {
+    @extend .section-col;
+
+  
+
+    .hero-img-holder {
+        @extend .section-img-holder;
+    }
+
+    .hero-title {
+        color: $title-color;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+
+        display: block;
+        margin-bottom: 30px;
+
+        @include media ('>=tablet') {
+            font-size: 44px;
+            margin-bottom: 38px;
+            text-align: left;
+        }
+    }
+
+    .hero-text-holder {
+        font-size: 16px;
+        line-height: 26px;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @include media ('>=tablet') {
+            margin-bottom: 37px;
+            line-height: 28px;
+            text-align:left;
+        }
+    }
+
+    .hero-btn-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        & li:first-of-type {
+            margin-bottom: 30px;
+        }
+        
+
+        @include media ('>=tablet') {
+            flex-direction: row;
+            & li:first-of-type {
+                margin-right: 30px;
+            }
+        }
+        @include media ('>=955px') {
+            & li:first-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .hero-btn {
+        @extend .btn-large
+    }
+
+    .hero-link {
+        font-weight: 600;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: $orange-color;
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            //@include triangle(20px, $orange-color, up)
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 13px solid $orange-color;
+            border-radius: 1.125px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

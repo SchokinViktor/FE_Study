@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+
+    color: $text-color;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @include media ('>=tablet') {
+        width: 100%;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
+.btn {
+    background-color: $orange-color;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.btn-large {
+    @extend .btn;
+
+    @include media ('>=tablet') {
+        padding: 15px 41px;
+    }
+}
+
+.btn-small {
+    @extend .btn;
+
+    padding: 10px 15px;
+}
+
+
+.section-col-holder {
+    @include media('>=tablet') {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.section-col {
+    @include media ('>=tablet') {
+        
+
+        &:last-child {
+            width: 480 / 1140 *100%;
+            //width: 45%;
+            margin-right: 30px;
+        }
+    }
+}
+
+.section-img-holder {
+    width: 75%;
+    margin: 0 auto 40px;
+
+    @include media ('>=tablet') {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+.section-title-holder {
+    margin-bottom: 37px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+    color: $title-color;
+
+    @include media ('>=tablet') {
+        
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+
+.section-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: $text-color;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section-intro-paragraph-holder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.section-list-item {
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.list-item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $title-color;
+    margin-bottom: 12px;
+}
+
+.list-item-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    
+    color: $text-color;
+}
+
+.input {
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 100%;
+    height: 48px;
+}
