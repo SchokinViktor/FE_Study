@@ -1,0 +1,34 @@
+.footer {
+    background-color: #F4F4F4;
+
+    .container {
+        padding: 68px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include media (">=tablet") {
+            padding: 140px 0;
+            flex-direction: row;
+        }
+    }
+}
+
+.footer-title {
+    display: block;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: $main-color;
+    margin-bottom: 30px;
+
+    @include media (">=tablet") {
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+}
+
+
+
+
