@@ -1,0 +1,150 @@
+.header {
+    padding-top: 50px;
+    margin-bottom: 74px;
+
+    @include media (">=tablet") {
+        margin-bottom: 120px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &.active {
+        .header-nav-holder {
+            opacity: 1;
+            visibility:visible;
+        }
+
+        .nav-opener {
+            span {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+                top: 7px;
+            }
+
+            &::after{
+                transform: rotate(-45deg);
+                bottom: 5px;
+            }
+        }
+    }
+}
+
+.header-nav-holder {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1;
+    transition: all 0.1s ease-in-out;
+
+    @include media (">=tablet") {
+        position: relative;
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @include media (">=tablet") {
+           flex-direction: row;
+           align-items: center;
+           margin: 0 -15px;
+        }
+
+        @include media (">=950px") {
+            margin: 0 -30px;
+        }
+    
+        .header-nav-list-item {
+            margin: 0 0 30px;
+            margin: 0 auto 40px;
+    
+            @include media (">=tablet") {
+                margin: 0;
+                padding: 0 15px;
+            }
+
+            @include media (">=950px") {
+                padding: 0 30px;
+            }
+    
+            .header-nav-link {
+                display: block;
+                color: $main-color;
+                font-size: 13px;
+                line-height: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0.3em;
+            }
+        }
+    }
+}
+
+.header-btns-holder {
+    display: flex;
+    align-items: center;
+
+    .search-button {
+        margin-right: 12px;
+    }
+}
+
+.nav-opener {
+    border: 0;
+    background-color: transparent;
+    bottom: none;
+    position: relative;
+    width: 24px;
+    height: 14px;
+
+    &::before,
+    &::after,
+    span {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        left: 0;
+        height: 2px;
+        background-color: $main-color;
+        transition: all 0.1s ease-in-out;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @include media (">=tablet") {
+        display: none;
+    }
+}
+
