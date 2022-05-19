@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icons/icomoon.eot?12xhtw');
+  src:  url('../fonts/icons/icomoon.eot?12xhtw#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?12xhtw') format('truetype'),
+    url('../fonts/icons/icomoon.woff?12xhtw') format('woff'),
+    url('../fonts/icons/icomoon.svg?12xhtw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-like:before {
+  content: "\e901";
+}
+.icon-check:before {
+  content: "\e902";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-quote-left:before {
+  content: "\f10d";
+}
+.icon-youtube:before {
+  content: "\f16a";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-search:before {
+  content: "\e900";
+}

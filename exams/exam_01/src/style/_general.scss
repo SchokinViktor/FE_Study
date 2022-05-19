@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.section-title {
+    font-family: $font-aleo;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 26px;
+    color: $color-white;
+}
+
+.section-card-title {
+    font-family: $font-brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-white;
+}
+
+.section-text {
+    font-family: $font-brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-text;
+}
+
+.btn {
+    padding: 21px 60px;
+    border: none;
+    display: inline-block;
+    background-color: transparent;
+    position: relative;
+
+    font-family: $font-aleo, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-white;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &::before {
+        content: url("../img/btn-bg-before.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    &::after {
+        content: url("../img/btn-bg-after.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -2;
+    }
+
+    &:hover {
+        background-color: $color-blue-dark;
+    }
+
+}
+
+.btn-search {
+    @extend .btn;
+    
+    padding: 21px 53px 21px 35px;
+    background-color: $color-blue-light;
+    font-size: 14px;
+
+    &::before {
+        content: "";
+    }
+
+    &::after {
+        content: "";
+    }
+
+    .icon-search {
+        font-size: 22px;
+        position: absolute;
+        right: 18px;
+        top: 48%;
+        transform: translateY(-50%);
+    }
+    
+}
