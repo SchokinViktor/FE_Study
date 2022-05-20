@@ -8,3 +8,5 @@ navOpener.addEventListener('click', () => {
         header.classList.add('active');
     }
 });
+
+
