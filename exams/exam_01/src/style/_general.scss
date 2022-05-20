@@ -41,10 +41,12 @@
 }
 
 .btn {
-    padding: 21px 60px;
+    padding: 21px 40px;
     border: none;
     display: inline-block;
-    background-color: transparent;
+    background-color: $color-blue-light;
+    background-image: url("../img/btn-bg-before.svg");
+    background-repeat: no-repeat;
     position: relative;
 
     font-family: $font-aleo, sans-serif;
@@ -55,22 +57,6 @@
     text-transform: uppercase;
     transition: all 0.2s linear;
     cursor: pointer;
-
-    &::before {
-        content: url("../img/btn-bg-before.svg");
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -1;
-    }
-
-    &::after {
-        content: url("../img/btn-bg-after.svg");
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -2;
-    }
 
     &:hover {
         background-color: $color-blue-dark;
@@ -84,6 +70,7 @@
     padding: 21px 53px 21px 35px;
     background-color: $color-blue-light;
     font-size: 14px;
+    background-image: none;
 
     &::before {
         content: "";
