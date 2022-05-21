@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: $font-brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-white;
+}
+
 .container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.main {
-    margin-top: 100px;
 }
 
 .section-title {
@@ -41,11 +44,13 @@
 }
 
 .btn {
-    padding: 21px 40px;
+    padding: 21px 10px;
+    text-align: center;
+    max-width: 228px;
+    width: 100%;
     border: none;
     display: inline-block;
     background-color: $color-blue-light;
-    background-image: url("../img/btn-bg-before.svg");
     background-repeat: no-repeat;
     position: relative;
 
@@ -66,8 +71,8 @@
 
 .btn-search {
     @extend .btn;
-    
     padding: 21px 53px 21px 35px;
+    width: auto;
     background-color: $color-blue-light;
     font-size: 14px;
     background-image: none;
@@ -87,5 +92,5 @@
         top: 48%;
         transform: translateY(-50%);
     }
-    
 }
+

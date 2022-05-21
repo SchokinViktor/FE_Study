@@ -2,6 +2,7 @@
     background-color: $color-blue-light;
     padding: 25px 0;
     position: fixed;
+    z-index: 1;
     width: 100%;
 
     &.active {
