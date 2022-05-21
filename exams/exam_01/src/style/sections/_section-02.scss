@@ -56,6 +56,11 @@
 
         .section-02-img-holder {
             max-width: 350px;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
 
             @include media ('>=1070px') {
 
