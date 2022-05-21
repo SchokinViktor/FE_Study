@@ -1,0 +1,52 @@
+.card-section {
+    padding: 227px 0 99px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .container {
+        display: flex;
+        justify-content: flex-start;
+
+        &.second-card {
+            justify-content: flex-end;
+        } 
+    }
+
+    .section-card {
+        background-color: rgba(35, 35, 35, 0.9);
+        width: 100%;
+        padding: 50px 32px;
+
+        @include media ('>=tablet') {
+            width: 50%;
+        }
+        
+        .card-subtitle {
+            color: $color-dark-white;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            display: block;
+            line-height: 26px;
+            margin-bottom: 25px;
+        }
+
+        .card-title {
+            text-transform: uppercase;
+            color: $color-white;
+            margin-bottom: 15px;
+        }
+
+        .card-text-holder {
+            @extend .section-text;
+            margin-bottom: 48px;
+            font-size: 16px;
+        }
+
+        .btn {
+            padding: 17px 10px;
+        }
+    }
+}
