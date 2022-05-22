@@ -1,7 +1,7 @@
 .hero-section {
     width: 100%;
     padding-top: 76px;
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,6 +99,7 @@
             line-height: 26px;
             letter-spacing: 2.8px;
             color: $color-white;
+            display: inline-block;
 
             span {
                 display: block;
