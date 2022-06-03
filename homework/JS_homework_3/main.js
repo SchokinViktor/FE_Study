@@ -1,3 +1,4 @@
+//1
 let userAge = prompt('Enter your age: ');
 
 switch (true) {
@@ -21,7 +22,7 @@ switch (true) {
         alert('wrong age');
 }
 
-
+//2
 let userSymbol = +prompt('Enter your number');
 
 switch (userSymbol) {
@@ -65,6 +66,8 @@ switch (userSymbol) {
         alert('there is no symbol for this number');
 }
 
+
+//3
 let startNumber = +prompt('Enter first number');
 let endNumber = +prompt('Enter second number');
 
@@ -72,7 +75,7 @@ for (let i = (startNumber + 1); i < endNumber; i++) {
     console.log(i);
 }
 
-
+//4
 let firstNumber = +prompt('Enter first number');
 let secondNumber = +prompt('Enter second number');
 let NOD = 1;
@@ -104,6 +107,7 @@ while (true) {
 alert(NOD);
 
 
+//5
 let userDivideNumber = +prompt('Enter the number');
 for (let i = 1; i <= userDivideNumber; i++) {
 
@@ -131,6 +135,7 @@ if (flag) {
 }
 
 
+//6
 let sum = +prompt('Enter the sum you have');
 
 switch (true) {
@@ -146,6 +151,8 @@ switch (true) {
 }
 
 
+
+//7
 let numberChangable;
 let negativeNumbersCounter = 0;
 let positiveNumbersCounter = 0;
@@ -168,13 +175,14 @@ for (let i = 0; i < 10; i++) {
             break;
     }
 }
-alert('You have: 
-\n' + "Positive numbers: " + positiveNumbersCounter +
+alert('You have: Positive numbers: ' + positiveNumbersCounter +
     '\n' + "Negative numbers: " + negativeNumbersCounter + 
     '\n' + "Nulls: " + zeroCounter +
     '\n' + "Pair numbers: " + pairNumbersCounter);
 
 
+
+//7
 let checkNextDay = true;
 let i = 0;
 while (checkNextDay) {
