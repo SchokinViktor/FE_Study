@@ -174,38 +174,44 @@ let unsoldSum = calculateUnsoldSum(productsList);
 console.log('Total unsoledSum: ' + unsoldSum);
 
 function showSortedProductList(howToSort, arr) {
-    let totalSumArr = [];
+    // let totalSumArr = [];
         
-    arr.forEach( (item, i) => {
-        totalSumArr[i] = item.priceTotal;
-    });
+    // arr.forEach( (item, i) => {
+    //     totalSumArr[i] = item.priceTotal;
+    // });
 
-    if (howToSort == '+') {
-        console.log('Sorted from highest to lowest: ');
-        totalSumArr.sort((a, b) => b - a);
+    // if (howToSort == '+') {
+    //     console.log('Sorted from highest to lowest: ');
+    //     totalSumArr.sort((a, b) => b - a);
 
-        for (let i = 0; i < arr.length; i++) {
-            for (let j = 0; j < arr.length; j++) {
-                if (arr[i].priceTotal == totalSumArr[j]) {
-                    console.log(arr[j]);
-                }
-            }
-        }   
+    //     for (let i = 0; i < arr.length; i++) {
+    //         for (let j = 0; j < arr.length; j++) {
+    //             if (arr[i].priceTotal == totalSumArr[j]) {
+    //                 console.log(arr[j]);
+    //             }
+    //         }
+    //     }   
 
-    } else if (howToSort == '-') {
-        console.log('Sorted from lowest to highest: ');
-        totalSumArr.sort();
+    // } else if (howToSort == '-') {
+    //     console.log('Sorted from lowest to highest: ');
+    //     totalSumArr.sort();
 
-        for (let i = 0; i < arr.length; i++) {
-            for (let j = 0; j < arr.length; j++) {
-                if (arr[i].priceTotal == totalSumArr[j]) {
-                    console.log(arr[j]);
-                }
-            }
-        }   
+    //     for (let i = 0; i < arr.length; i++) {
+    //         for (let j = 0; j < arr.length; j++) {
+    //             if (arr[i].priceTotal == totalSumArr[j]) {
+    //                 console.log(arr[j]);
+    //             }
+    //         }
+    //     }   
 
+    // } else {
+    //     return "Can't sort with unknown method";
+    // }
+
+    if (howToSort === "+") {
+        arr.sort((a, b) => b.priceTotal - a.priceTotal);
     } else {
-        return "Can't sort with unknown method";
+        arr.sort((a, b) => a.priceTotal - b.priceTotal);
     }
 }
 
