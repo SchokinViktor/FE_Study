@@ -98,13 +98,13 @@ const resizebleDiv = document.querySelector('.resizable');
 const resizer = document.querySelector('.resizer');
 console.log(resizebleDiv.getBoundingClientRect());
 
-resizer.addEventListener('mousedown', (e) => {
-      e.preventDefault();
+resizer.addEventListener('mousedown', () => {
       window.addEventListener('mousemove', resize);
       window.addEventListener('mouseup', stopResize);
 });
 
 function resize(e) {
+    console.log(e);
     resizebleDiv.style.width = e.pageX - resizebleDiv.getBoundingClientRect().left + 'px';
     resizebleDiv.style.height = e.pageY - resizebleDiv.getBoundingClientRect().top + 'px';
 }

@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 15px;
+}
+
+.search-holder {
+    padding: 20px;
+    background-color: #a8a8d2;
+}
+
+.search-input {
+    outline: none;
+    width: 100%;
+    border-radius: 0;
+    height: 40px;
+    border: 1px solid;
+    padding: 2px 15px;
+}
+
+.item {
+    display: flex;
+}
+
+.img-holder {
+    width: 100%;
+    max-width: 400px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.info-list {
+    width: calc(100% - 400px);
+    padding: 0 40px;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-list li{
+    display: inline;
+}
+
+.filter-list li.active{
+    font-weight: 700;
+}
