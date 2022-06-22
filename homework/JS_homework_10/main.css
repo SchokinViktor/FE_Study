@@ -54,3 +54,11 @@ img {
 .filter-list li.active{
     font-weight: 700;
 }
+
+.fancybox__container.is-animated[aria-hidden=false] .fancybox__toolbar{
+    display: none;
+}
+
+.fancybox__thumbs {
+    display: none;
+}

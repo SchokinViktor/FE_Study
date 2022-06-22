@@ -78,7 +78,9 @@ function load() {
         const block = `
             <div class="item">
                 <div class="img-holder">
-                    <img src="${item.image}" alt="mustang">
+                    <a href ="${item.image}" data-fancybox="gallery" data-caption="${item.model}">
+                        <img src="${item.image}" alt="mustang">
+                    </a>
                 </div>
                 <ul class="info-list">
                     <li>${item.year}</li>
