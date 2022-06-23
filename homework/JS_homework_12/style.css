@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(79, 79, 79);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    padding: 0 40px;
+}
+
+#map {
+    height: 50vh;
+}
+
+.marker-description {
+    width: 350px;
+}
+
+.img-marker-holder img {
+    width: 350px;
+    height: auto;
+}
