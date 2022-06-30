@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(85 82 95);
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.main-title {
+color: #fff;
+   text-align: center;
+   margin-bottom: 60px;
+   font-weight: 700;
+   font-size: 48px;
+}
+
+.container {
+    
+    max-width: 1140px;
+    padding: 0 15px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+strong {
+    display: block;
+}
+
+.weather-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px 15px;
+    border: 6px solid rgb(255, 214, 29);
+    max-width: 300px;
+    width: 100%;
+    color: rgb(46, 45, 45);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-title-holder {
+    
+    border-bottom: 2px solid rgba(57, 57, 57, 0.169);
+    padding-bottom: 30px;
+    max-width: 50%;
+    margin: 0 auto 50px;
+}
+
+.card-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card-info-holder {
+    max-width: 50%;
+    margin: 0 auto 40px;
+    border-bottom: 2px solid rgba(57, 57, 57, 0.169);
+    padding-bottom: 30px;
+}
+
+.degree {
+    margin-bottom: 20px;
+}
