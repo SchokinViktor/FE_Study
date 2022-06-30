@@ -20,7 +20,7 @@
                         <h2 class="card-title">${cityData.cityName}</h2>
                     </div>
                     <div class="card-info-holder">
-                        <strong class="degree">${cityData.tempature}</strong>
+                        <strong class="degree">${cityData.tempature} &deg;</strong>
                         <strong class="status">${cityData.status}</strong>
                     </div>
                     <div class="card-icon-holder">
@@ -34,7 +34,7 @@
     }
 
 
-    const cityIdList = ['706483', '703448', '702550', '1850147', '2147714', '709930'];
+    const cityIdList = ['706483', '703448', '702550', '1850147', '3068345', '709930'];
     const weatherData = []
 
     function refreshWeatherData() {
